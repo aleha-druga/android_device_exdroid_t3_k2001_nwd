@@ -1,0 +1,4 @@
+#
+# system.prop for polaris
+#
+ro.hardware=sun8i
