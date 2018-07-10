@@ -12,3 +12,4 @@
 /logger		ext4	/dev/block/nandk
 /sdcard		vfat	/dev/block/nandl	flags=backup=1;storage;settingsstorage;display="Internal SDCard";wipeingui
 /external_sd	vfat	/dev/block/mmcblk0p1	flags=backup=1;storage;display="External SDCard";wipeingui;removable
+/usb-otg        vfat    /dev/block/sda1      /dev/block/sda	flags=removable;storage;wipeingui;usermrf;display="USB-OTG"
