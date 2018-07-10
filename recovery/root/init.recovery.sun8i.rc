@@ -12,3 +12,7 @@ on init
     insmod /gslX680new.ko
 
     mkdir /databk
+
+service erase_misc /sbin/sh -c "echo -en '\0' > /dev/block/nandf; sync"
+    oneshot
+    seclabel u:r:recovery:s0
