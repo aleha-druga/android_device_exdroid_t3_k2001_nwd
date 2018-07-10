@@ -15,7 +15,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Kernel
 TARGET_PREBUILT_KERNEL := device/enet/polaris/kernel
-BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8 androidboot.selinux=permissive androidboot.hardware=sun8i
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100  --second_offset 0x00f00000
@@ -48,6 +48,7 @@ TW_MAX_BRIGHTNESS := 255
 TW_BRIGHTNESS_PATH := "/sys/devices/virtual/disp/disp/attr/lcd_bl"
 TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_NTFS_3G := true
+TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_INTERNAL_STORAGE_PATH := "/sdcard"
