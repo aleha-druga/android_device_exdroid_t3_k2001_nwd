@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_polaris.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_t3_k2001_nwd.mk
 
